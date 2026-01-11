@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f1f5f9;
+}
+header{
+    background:linear-gradient(to right,#9008ea,#db5f0d);
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+.search{
+    background:white;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+}
+.search input{
+    width:98%;
+    padding:10px;
+    margin:8px 0;
+}
+.places{
+    padding:20px;
+}
+.card{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+.card:hover{
+    transform:scale(1.02);
+}
+.price{
+    color:#16a34a;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>TravelGo</h1>
+    <p>Book Your Dream Trip</p>
+</header>
+
+<div class="search">
+    <input type="text" placeholder="From">
+    <input type="text" placeholder="To">
+    <input type="date">
+</div>
+
+<section class="places">
+    <div class="card">
+        <h3>Paris</h3>
+        <p>5 Days / 4 Nights</p>
+        <p class="price">₹85,000</p>
+    </div>
+    <div class="card">
+        <h3>Bali</h3>
+        <p>6 Days / 5 Nights</p>
+        <p class="price">₹95,000</p>
+    </div>
+</section>
+
+</body>
+</html>

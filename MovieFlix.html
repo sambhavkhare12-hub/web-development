@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovieFlix</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b0f19;
+            color: #ffffff;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #dc2626, #7c2d12);
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #020617;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url("https://via.placeholder.com/1200x400");
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #e5e7eb;
+        }
+
+        /* Movie Section */
+        .section {
+            padding: 30px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .movie-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .movie-card {
+            background-color: #1f2933;
+            width: 230px;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(250,204,21,0.4);
+        }
+
+        .movie-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .movie-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .movie-card p {
+            font-size: 14px;
+            color: #d1d5db;
+        }
+
+        .rating {
+            color: #facc15;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #020617;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MovieFlix</h1>
+        <p>Unlimited Movies. Endless Entertainment.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Trending</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Featured Movie</h2>
+        <p>Watch the latest blockbuster now</p>
+    </div>
+
+    <div class="section">
+        <h2>Popular Movies</h2>
+
+        <div class="movie-container">
+            <div class="movie-card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQovCe0H45fWwAtV31ajOdXRPTxSsMQgPIQ3lcZX_mAW0jXV3kH" alt="Movie 1">
+                <h3>Inception</h3>
+                <p>Sci-fi | Action</p>
+                <div class="rating">⭐ 8.8</div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXef9DJnZiq5az0UnjkmvkQufOQ5MFnF7HATYRUXN913swRuH1" alt="Movie 2">
+                <h3>Avengers: Endgame</h3>
+                <p>Action | Superhero</p>
+                <div class="rating">⭐ 8.4</div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWZpGhzujX1kQa4soNOgb31EyRYhEn0h14GxqoZeyyVKlyhpdJ" alt="Movie 3">
+                <h3>Harry Potter</h3>
+                <p>Magic Fantasy | Drama</p>
+                <div class="rating">⭐ 8.6</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 MovieFlix
+    </footer>
+
+</body>
+</html>

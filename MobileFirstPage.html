@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile First Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ===== Mobile First (Default Styles) ===== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1e293b;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .hero {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to right, #38bdf8, #0ea5e9);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+        }
+
+        .hero p {
+            font-size: 14px;
+        }
+
+        .cards {
+            padding: 15px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        /* ===== Tablet & Desktop Styles ===== */
+        @media (min-width: 768px) {
+            nav {
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .cards {
+                display: flex;
+                gap: 20px;
+            }
+
+            .card {
+                flex: 1;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mobile First</h1>
+        <p>Simple Responsive Design</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Build Mobile-First Websites</h2>
+        <p>Designed for small screens first, enhanced for larger screens.</p>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Fast</h3>
+            <p>Optimized layout for mobile devices.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive</h3>
+            <p>Adapts smoothly to any screen size.</p>
+        </div>
+
+        <div class="card">
+            <h3>Modern</h3>
+            <p>Clean UI with minimal design.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Mobile-First Design
+    </footer>
+
+</body>
+</html>
