@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOPSHADOW – Online Shopping</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #e3e6e6;
+    }
+
+    /* HEADER */
+    .navbar {
+      background: #131921;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f08804;
+    }
+
+    .search-bar {
+      flex: 1;
+      display: flex;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 10px 15px;
+      background: #febd69;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .nav-links div span {
+      display: block;
+      font-size: 12px;
+    }
+
+    /* SUB NAV */
+    .sub-nav {
+      background: #232f3e;
+      color: white;
+      padding: 8px 20px;
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('https://images.unsplash.com/photo-1607082350899-7e105aa886ae');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* PRODUCTS */
+    .products {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: #b12704;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card button {
+      width: 100%;
+      padding: 8px;
+      background: #ffd814;
+      border: 1px solid #fcd200;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #131921;
+      color: white;
+      padding: 30px;
+      margin-top: 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    footer h4 {
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="navbar">
+    <div class="logo">SHOPSHADOW</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products" />
+      <button>Search</button>
+    </div>
+    <div class="nav-links">
+      <div><span>Hello</span>Account</div>
+      <div><span>Returns</span>& Orders</div>
+      <div><span>Your</span>Cart 🛒</div>
+    </div>
+  </div>
+
+  <!-- SUB NAV -->
+  <div class="sub-nav">
+    <div>All</div>
+    <div>Mobiles</div>
+    <div>Electronics</div>
+    <div>Fashion</div>
+    <div>Home</div>
+    <div>Deals</div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Big Sale is Live 🔥</h1>
+      <p>Up to 70% off on top brands</p>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71T10gT0BSL._SX679_.jpg" />
+      <h3>SAMSUNG S25 ULTRA SNAPDRAGON 8 ELITE</h3>
+      <p class="price">₹1,41,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/51JZ+6M4vyL._SX679_.jpg" />
+      <h3>REALME T310 EARBUDS WITH ANC</h3>
+      <p class="price">₹2,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61dw3sqmTuL._SX522_.jpg" />
+      <h3>FASTRACK SMART WATCH</h3>
+      <p class="price">₹6,499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81vKJm5dS3L._SX679_.jpg" />
+      <h3>LENOVO LEGION 7 PRO INTEL ULTRA 9</h3>
+      <p class="price">₹3,29,490</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61ylMOBhOXL._SX679_.jpg" />
+      <h3>PETER ENGLAND BLACK Shirt</h3>
+      <p class="price">₹4,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/51T0ZZuBdRL._SX679_.jpg" />
+      <h3>LOUIS PHILIPPE WINE Shirt</h3>
+      <p class="price">₹5,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://sony.scene7.com/is/image/sonyglobalsolutions/TVFY25_BRAVIA8II_02_CW_M?$productIntroPlatemobile$&fmt=png-alpha" />
+      <h3>SONY BRAVIA 8 II OLED ANDROID TV</h3>
+      <p class="price">₹3,67,900</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61Wlv-tbcEL._SX679_.jpg" />
+      <h3>CELESTRON TELESCOPE</h3>
+      <p class="price">₹25,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+  <div class="card">
+      <img src="https://m.media-amazon.com/images/I/41XJIseN7rL._SY300_SX300_QL70_FMwebp_.jpg" />
+      <h3>SAMSUNNG A11+ TABLET</h3>
+      <p class="price">₹32,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71ehPVpjIdL._SX522_.jpg" />
+      <h3>TRIUMPH Speed 400 MY25</h3>
+      <p class="price">₹2,39,000 </p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/41EJryxe1WL._SY300_SX300_QL70_FMwebp_.jpg" />
+      <h3>IQOO 15 SNAPDRAGON 8 ELITE GEN 5</h3>
+      <p class="price">₹79,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/41gE7Xj1ZXL._SY300_SX300_QL70_FMwebp_.jpg" />
+      <h3>Sony Alpha ILCE-7M4K CAMERA</h3>
+      <p class="price">₹1,95,990</p>
+      <button>Add to Cart</button>
+    </div>
+   </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Get to Know Us</h4>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Press</p>
+      </div>
+      <div>
+        <h4>Connect with Us</h4>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+      </div>
+      <div>
+        <h4>Make Money</h4>
+        <p>Sell on SHOPSHADOW</p>
+        <p>Affiliate</p>
+        <p>Advertise</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <p>Payments</p>
+        <p>Shipping</p>
+        <p>Returns</p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 SHOPSHADOW.com</div>
+  </footer>
+
+</body>
+</html>
